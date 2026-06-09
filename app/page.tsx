@@ -293,7 +293,7 @@ TERMS & INDEMNIFICATION:
               <img
                 src="/logo_dark.png"
                 alt="BTU Hub Logo"
-                className="h-10 w-auto object-contain drop-shadow-[0_0_10px_rgba(6,182,212,0.5)]"
+                className="h-14 w-auto object-contain drop-shadow-[0_0_18px_rgba(6,182,212,0.7)]"
               />
               <div className="absolute -bottom-1 -right-1 w-3.5 h-3.5 rounded-full bg-emerald-500 border-2 border-slate-950" />
             </div>
@@ -348,7 +348,7 @@ TERMS & INDEMNIFICATION:
             <img 
               src="/logo_dark.png" 
               alt="BTU Hub Logo" 
-              className="h-44 md:h-56 w-auto drop-shadow-[0_0_35px_rgba(6,182,212,0.4)] object-contain relative z-10 hover:scale-105 transition-transform duration-300"
+              className="h-64 md:h-80 w-auto drop-shadow-[0_0_55px_rgba(6,182,212,0.65)] object-contain relative z-10 hover:scale-105 transition-transform duration-300"
             />
           </div>
           
@@ -924,7 +924,7 @@ TERMS & INDEMNIFICATION:
             <img
               src="/logo_dark.png"
               alt="BTU Hub Logo"
-              className="h-8 w-auto object-contain drop-shadow-[0_0_8px_rgba(6,182,212,0.5)]"
+              className="h-12 w-auto object-contain drop-shadow-[0_0_14px_rgba(6,182,212,0.65)]"
             />
             <span className="text-lg font-bold tracking-tight text-white">BTU Hub</span>
           </div>
