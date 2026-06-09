@@ -273,12 +273,13 @@ TERMS & INDEMNIFICATION:
   return (
     <main className="min-h-screen relative text-slate-50 selection:bg-cyan-500/30 font-sans overflow-hidden bg-[#020617]">
       
-      {/* BACKGROUND EFFECTS */}
-      <div className="absolute inset-0 z-0 bg-cover bg-center bg-fixed pointer-events-none opacity-20" style={{ backgroundImage: "url('/3565.webp')" }} />
-      <div className="absolute inset-0 z-0 bg-gradient-to-b from-slate-950 via-[#03071e]/90 to-slate-950 pointer-events-none" />
+      {/* BACKGROUND COVER IMAGE */}
+      <div className="absolute inset-0 z-0 bg-cover bg-center bg-fixed pointer-events-none opacity-55" style={{ backgroundImage: "url('/3565.webp')" }} />
+      {/* Dark gradient overlay — lighter at top so cover shows, darker lower down */}
+      <div className="absolute inset-0 z-0 pointer-events-none" style={{ background: 'linear-gradient(to bottom, rgba(2,6,23,0.45) 0%, rgba(2,6,23,0.70) 40%, rgba(2,6,23,0.92) 75%, #020617 100%)' }} />
       
       {/* GRID OVERLAY */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#0f172a_1px,transparent_1px),linear-gradient(to_bottom,#0f172a_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-30 z-0 pointer-events-none" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#0f172a_1px,transparent_1px),linear-gradient(to_bottom,#0f172a_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-20 z-0 pointer-events-none" />
 
       {/* AMBIENT GLOW BLOBS */}
       <div className="absolute top-[-10%] left-[10%] w-[50%] h-[50%] rounded-full bg-cyan-500/10 blur-[150px] pointer-events-none z-0 animate-pulse" style={{ animationDuration: '8s' }} />
@@ -289,9 +290,11 @@ TERMS & INDEMNIFICATION:
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="relative">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-purple-600 flex items-center justify-center shadow-lg shadow-cyan-500/20">
-                <Cpu className="w-5 h-5 text-white animate-spin-slow" />
-              </div>
+              <img
+                src="/logo_dark.png"
+                alt="BTU Hub Logo"
+                className="h-10 w-auto object-contain drop-shadow-[0_0_10px_rgba(6,182,212,0.5)]"
+              />
               <div className="absolute -bottom-1 -right-1 w-3.5 h-3.5 rounded-full bg-emerald-500 border-2 border-slate-950" />
             </div>
             <div className="flex flex-col">
@@ -918,9 +921,11 @@ TERMS & INDEMNIFICATION:
       <footer className="py-12 border-t border-slate-900 text-center relative z-10 bg-slate-950/80 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-purple-600 flex items-center justify-center">
-              <Cpu className="w-4 h-4 text-white" />
-            </div>
+            <img
+              src="/logo_dark.png"
+              alt="BTU Hub Logo"
+              className="h-8 w-auto object-contain drop-shadow-[0_0_8px_rgba(6,182,212,0.5)]"
+            />
             <span className="text-lg font-bold tracking-tight text-white">BTU Hub</span>
           </div>
 
