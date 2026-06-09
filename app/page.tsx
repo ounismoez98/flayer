@@ -210,8 +210,10 @@ Access-Control-Allow-Headers: Content-Type, Authorization`
     const fullText = responsesMap[tutorTopic] || "Analyzing query...";
     
     const interval = setInterval(() => {
-      setTutorResponse(prev => prev + fullText[idx]);
-      idx++;
+      if (idx < fullText.length) {
+        setTutorResponse(prev => prev + fullText[idx]);
+        idx++;
+      }
       if (idx >= fullText.length) {
         clearInterval(interval);
         setTutorState('done');
@@ -257,8 +259,10 @@ TERMS & INDEMNIFICATION:
 
     let idx = 0;
     const interval = setInterval(() => {
-      setContractContent(prev => prev + template[idx]);
-      idx++;
+      if (idx < template.length) {
+        setContractContent(prev => prev + template[idx]);
+        idx++;
+      }
       if (idx >= template.length) {
         clearInterval(interval);
         setContractState('completed');
